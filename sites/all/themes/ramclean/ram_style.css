@@ -4,6 +4,23 @@
   padding: 10px 0;
 }
 
+.author-and-date {
+  font-size: 10px;
+}
+
+div.messages.status, div.messages.status a, div.messages.error a, div.messages.warning a
+{ color:#ff0000; text-decoration:underline; }
+
+.field-name-author {
+  color: #8BB82A;
+  display: inline;
+}
+
+.field-name-post-date {
+  color: #8BB82A;
+  display: inline;
+}
+
 .sitename {
   margin-top: 10px;
 }
@@ -12,6 +29,7 @@
   float: left;
   width: 80%;
 }
+
 * html .panel-2col .panel-col-first {
   width: 70.9%;
 }
@@ -33,6 +51,12 @@
 
 .view-mode-newsteaser .news-teaser-row {
   height: 18px;
+}
+
+.view-mode-newsvollansicht h1, h2, h3, h4, h5, h6 {
+  margin:25px 0 2px 0;
+  line-height:120%;
+  text-shadow: 1px 1px 1px #EAF1EA;
 }
 
 * html .panel-2col .panel-col-last {
