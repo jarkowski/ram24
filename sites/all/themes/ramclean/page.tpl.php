@@ -7,11 +7,11 @@
         <div id="header-inside-left" class="grid_8">
             
             <?php if ($logo): ?>
-            <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+            <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img class="logo-image" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
             <?php endif; ?>
      
             <?php if ($site_name || $site_slogan): ?>
-            <div class="clearfix">
+            <div class ="sitename clearfix">
             <?php if ($site_name): ?>
             <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
             <?php endif; ?>
