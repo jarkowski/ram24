@@ -6,7 +6,7 @@
 // dpm($variables);
 
 ?>
-<<?php print $ds_content_wrapper; print $layout_attributes; ?> class="ds-1col <?php print $classes;?> clearfix">
+<<?php print $ds_content_wrapper; print $layout_attributes; ?> class="ds-1col <?php print $classes;?> clearfix news-full-teaser-block">
 
 <?php if (isset($title_suffix['contextual_links'])): ?>
 <?php print render($title_suffix['contextual_links']); ?>
@@ -14,7 +14,7 @@
 
 
 <?php print render($content['title']); ?>
-<span class="author-and-date">
+<span id="id-author-and-date"  class="author-and-date">
 <?php print render($variables['author_and_date']); ?>
 </span>
 <?php hide($content['title']); ?>
