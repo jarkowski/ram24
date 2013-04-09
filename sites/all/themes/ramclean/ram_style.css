@@ -100,7 +100,7 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 
 .pane-rightsidebarimages-panel-pane-1 h2 {
   margin-top: 5px;
-  color: #8b0000;
+
   text-align: center;
 }
 
@@ -109,6 +109,18 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
   margin-right: auto;
 }
 
+.pane-rightsidebarimages-panel-pane-1 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+
+.pane-rightsidebarimages-panel-pane-1 .field-name-field-mitarbeiter-vorname {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 
 
 }
