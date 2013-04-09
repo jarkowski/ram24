@@ -45,7 +45,7 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block {
 
-  background-image: linear-gradient(white 0%, red 100%);
+  background-image: linear-gradient(white 0%, #8BB82A 200%);
   border-width: 0px;
   border-style: solid;
   border-radius: 15px;
@@ -54,6 +54,7 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
   padding-right: 20px;
   padding-bottom: 5px;
   padding-left: 20px;
+
 
 }
 
