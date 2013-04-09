@@ -69,8 +69,14 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
   /*display: inline;*/
   float: left;
   margin-right: 0.5em;
+  font-size: 15px;
 }
 
+.view-mode-mitarbeitertelefonliste .field-name-field-mitarbeiter-bild{
+  float: left;
+  height: 50px;
+  margin-right: 7px;
+}
 
 .news-teaser-title {
   font-size: 15px;
