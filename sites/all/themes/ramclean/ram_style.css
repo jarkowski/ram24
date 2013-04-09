@@ -44,7 +44,8 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 }
 
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block {
-  background-color: #eef9df;
+
+  background-image: linear-gradient(white 0%, red 100%);
   border-width: 0px;
   border-style: solid;
   border-radius: 15px;
