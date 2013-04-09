@@ -35,8 +35,10 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 }
 
 .panel-2col .panel-col-last {
+  background-image: linear-gradient(white 0%, #8BB82A 200%);
   float: left;
   width: 20%;
+
 }
 
 .logo-image {
