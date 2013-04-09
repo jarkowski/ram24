@@ -35,7 +35,8 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 }
 
 .panel-2col .panel-col-last {
-  background-image: linear-gradient(white 0%, #8BB82A 200%);
+  /*background-image: linear-gradient(#EDEDED 0%, #8BB82A 300%);*/
+  background-color: #E0E6D2;
   float: left;
   width: 20%;
 
@@ -48,11 +49,12 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block,
 .view-id-mitarbeiterliste .views-row {
 
-  background-image: linear-gradient(white 0%, #8BB82A 200%);
+  /*background-image: linear-gradient(#EDEDED 0%, #8BB82A 250%);*/
+  background-color: #E0E6D2;
   border-width: 0px;
   border-style: solid;
   border-radius: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   padding-top: 5px;
   padding-right: 20px;
   padding-bottom: 5px;
@@ -94,6 +96,21 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
   margin:25px 0 2px 0;
   line-height:120%;
   text-shadow: 1px 1px 1px #EAF1EA;
+}
+
+.pane-rightsidebarimages-panel-pane-1 h2 {
+  margin-top: 5px;
+  color: #8b0000;
+  text-align: center;
+}
+
+.field-name-field-mitarbeiter-bild img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 }
 
 * html .panel-2col .panel-col-last {
