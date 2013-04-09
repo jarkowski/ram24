@@ -47,7 +47,9 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 }
 
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block,
-.view-id-mitarbeiterliste .views-row {
+.view-id-mitarbeiterliste .views-row,
+.view-id-partnerliste .views-row,
+.view-mode-mitarbeitervollansicht{
 
   /*background-image: linear-gradient(#EDEDED 0%, #8BB82A 250%);*/
   background-color: #E0E6D2;
@@ -59,6 +61,7 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
   padding-right: 20px;
   padding-bottom: 5px;
   padding-left: 20px;
+
 }
 
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block h2 {
