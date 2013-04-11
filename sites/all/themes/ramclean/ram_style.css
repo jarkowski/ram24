@@ -49,7 +49,9 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block,
 .view-id-mitarbeiterliste .views-row,
 .view-id-partnerliste .views-row,
-.view-mode-mitarbeitervollansicht{
+.view-mode-mitarbeitervollansicht,
+.pane-newsliste-panel-pane-2,
+.panel-display .front-page-main-panel{
 
   /*background-image: linear-gradient(#EDEDED 0%, #8BB82A 250%);*/
   background-color: #E0E6D2;
