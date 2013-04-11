@@ -4,6 +4,12 @@
   padding: 10px 0;
 }
 
+#node-2 img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
 .author-and-date {
   font-size: 10px;
 }
@@ -49,10 +55,11 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block,
 .view-id-mitarbeiterliste .views-row,
 .view-id-partnerliste .views-row,
-.view-mode-mitarbeitervollansicht,
 .pane-newsliste-panel-pane-2,
-.panel-display .front-page-main-panel{
-
+.content .panel-display .front-page-main-panel,
+.content .panel-display .basic-page-main-panel,
+.content .panel-display .partner-node-main-panel,
+.content .panel-display .mitarbeiter-node-main-panel{
   /*background-image: linear-gradient(#EDEDED 0%, #8BB82A 250%);*/
   background-color: #E0E6D2;
   border-width: 0px;
