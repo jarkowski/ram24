@@ -51,6 +51,8 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 .logo-image {
   margin-left: 25px;
 }
+@media (max-width:300px){
+
 
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block,
 .view-id-mitarbeiterliste .views-row,
@@ -72,6 +74,7 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
   padding-bottom: 5px;
   padding-left: 20px;
 
+}
 }
 
 .pane-newsliste-panel-pane-1 .view-id-newsliste .news-full-teaser-block h2 {
