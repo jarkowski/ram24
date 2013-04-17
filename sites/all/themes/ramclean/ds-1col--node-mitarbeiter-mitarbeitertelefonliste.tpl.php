@@ -11,14 +11,14 @@
 print $layout_attributes; ?> class="ds-1col <?php print $classes; ?> clearfix">
 
 
-<div id="mitarbeitertelefonliste_right_content_wrapper">
+<div id="mitarbeitertelefonliste-right-content-wrapper">
 
     <table>
         <tr>
-            <th style="width:8%"><?php print render($content['field_mitarbeiter_bild']); ?></th>
-            <th style="width:24%">David Jarkowski</th>
-            <th style="width:24%">+49 40 308543-13</th>
-            <th style="width:40%">r.brodrecht@ram-electronic-gmbh.de</th>
+            <th style="width:8%"><span class="telefonliste-table"><?php print render($content['field_mitarbeiter_bild']); ?></span></th>
+            <th style="width:24%;"><span class="telefonliste-table"><?php print render($content['field_mitarbeiter_vorname']); ?> <?php print render($content['field_mitarbeiter_nachname']); ?></span></th>
+            <th style="width:24%"><span class="telefonliste-table"><?php print render($content['field_mitarbeiter_telefon']); ?></span></th>
+            <th style="width:40%"><span class="telefonliste-table"><?php print render($content['field_mitarbeiter_email']); ?></span></th>
         </tr>
 
 

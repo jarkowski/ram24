@@ -167,6 +167,12 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
 }
 
 
+.telefonliste-table,
+.telefonliste-table a {
+
+  font-size: 14px;
+}
+
 .pane-rightsidebarimages-panel-pane-1 .field-name-field-mitarbeiter-vorname {
   margin-top: 20px;
   margin-bottom: 5px;
