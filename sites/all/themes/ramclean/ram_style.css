@@ -10,7 +10,7 @@
   display: block;
 }
 
-#ma_bild_wrapper {
+#mitarbeitervollansicht_ma_bild_wrapper {
   display: inline-block;
   width: 20%;
   vertical-align: top;
@@ -19,14 +19,14 @@
   padding-top: 10px;
 }
 
-#ma_bild_wrapper img {
+#mitarbeitervollansicht_ma_bild_wrapper img {
   display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-#right_content_wrapper {
+#mitarbeitervollansicht_right_content_wrapper {
   display: inline-block;
   width: 73%;
   padding-right: 10px;
@@ -34,7 +34,7 @@
   padding-top: 10px;
 }
 
-#right_content_wrapper h2 {
+#mitarbeitervollansicht_right_content_wrapper h2 {
   line-height: 100%;
   margin: 0px 0px 0px 0px;
   font-size: 18px;

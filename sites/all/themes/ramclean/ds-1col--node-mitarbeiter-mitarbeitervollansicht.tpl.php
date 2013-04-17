@@ -13,11 +13,11 @@ print $layout_attributes; ?> class="ds-1col <?php print $classes; ?> clearfix">
 
 
 
-<div id="ma_bild_wrapper">
+<div id="mitarbeitervollansicht_ma_bild_wrapper">
   <?php print render($content['field_mitarbeiter_bild']); ?>
 </div>
 
-<div id="right_content_wrapper">
+<div id="mitarbeitervollansicht_right_content_wrapper">
     <h2><?php print render($content['field_mitarbeiter_vorname']); ?></h2>
   <?php print render($content['field_mitarbeiter_nachname']); ?>
     <div id="id-field-position"><?php print render($content['field_position']); ?></div>
