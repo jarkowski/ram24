@@ -11,13 +11,19 @@
 print $layout_attributes; ?> class="ds-1col <?php print $classes; ?> clearfix">
 
 
+<div id="mitarbeitertelefonliste_right_content_wrapper">
+
+    <table>
+        <tr>
+            <th><?php print render($content['field_mitarbeiter_bild']); ?></th>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Telefon</th>
+            <th>eMail</th>
+        </tr>
 
 
-<div id="ma_bild_wrapper">
-  <?php print render($content['field_mitarbeiter_bild']); ?>
-</div>
-  aaa   bbbb   cccc
-<div id="right_content_wrapper">
+    </table>
 
 </div>
 

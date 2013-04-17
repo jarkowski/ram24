@@ -179,3 +179,14 @@ div.messages.status, div.messages.status a, div.messages.error a, div.messages.w
   width: 19.9%;
 }
 
+/*
+* Tables
+*/
+table { border-style:hidden; border-spacing:0; border:0; width:100%;  }
+table td, table th { border:0px hidden #E0E6D2; }
+table th { background:#E0E6D2; font-weight:bold; color:#8BB82A; }
+table tr.odd { background:transparent; }
+table tr.even { background:#ffffff; }
+table td, table th { padding:1px; }
+/* Remove table borders */
+table.noborder td, table.noborder th, table.noborder tr { border:none; }
