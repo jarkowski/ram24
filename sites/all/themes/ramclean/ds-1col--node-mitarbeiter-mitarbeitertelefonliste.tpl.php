@@ -15,11 +15,10 @@ print $layout_attributes; ?> class="ds-1col <?php print $classes; ?> clearfix">
 
     <table>
         <tr>
-            <th><?php print render($content['field_mitarbeiter_bild']); ?></th>
-            <th>Vorname</th>
-            <th>Nachname</th>
-            <th>Telefon</th>
-            <th>eMail</th>
+            <th style="width:8%"><?php print render($content['field_mitarbeiter_bild']); ?></th>
+            <th style="width:24%">David Jarkowski</th>
+            <th style="width:24%">+49 40 308543-13</th>
+            <th style="width:40%">r.brodrecht@ram-electronic-gmbh.de</th>
         </tr>
 
 
