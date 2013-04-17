@@ -10,6 +10,36 @@
   display: block;
 }
 
+#ma_bild_wrapper {
+  display: inline-block;
+  width: 190px;
+  vertical-align: top;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#ma_bild_wrapper img {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#right_content_wrapper {
+  display: inline-block;
+  width: 300px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#right_content_wrapper h2 {
+  line-height: 100%;
+  margin: 0px 0px 0px 0px;
+  font-size: 18px;
+}
+
 .author-and-date {
   font-size: 10px;
 }
