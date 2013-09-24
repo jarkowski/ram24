@@ -1,0 +1,124 @@
+<?php
+
+/**
+ * Implements hook_permission().
+ */
+function commpress_footer_link_permission() {
+  return array(
+    'change footer settings' => array(
+      'title' => t('Change comm-press footer settings'),
+      'description' => t('Allows the user to change settings, i.e. URL and link-text, for the global comm-press footer.'),
+    ),
+  );
+}
+/**
+ * Implements hook_menu().
+ *
+ *
+ */
+function commpress_footer_link_menu() {
+  $items = array();
+  $items['admin/config/user-interface/commpress_footer_link'] = array(
+    'title' => 'comm-press footer link',
+    'description' => 'Define settings for the comm-press footer link block',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('commpress_footer_link_admin_settings'),
+    'access callback' => 'user_access',
+    'access arguments' => array('change footer settings'),
+  );
+  return $items;
+}
+
+
+function commpress_footer_link_admin_settings() {
+  $form = array();
+
+
+  $form['commpress_footer_link_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('URL'),
+    '#resizable' => FALSE,
+    '#default_value' => variable_get('commpress_footer_link_url', 'http://comm-press.de'),
+    '#description' => t('URL for the footer.'),
+  );
+
+  $form['commpress_footer_link_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Link-Text'),
+    '#default_value' => variable_get('commpress_footer_link_text', 'comm-press - Ihre Drupal-Agentur in Hamburg'),
+    '#description' => t('Descriptive text for the footer.'),
+  );
+
+
+  return system_settings_form($form);
+}
+
+
+
+/**
+ * Implements hook_block_info().
+ *
+ * @return Array of block infos.
+ */
+function commpress_footer_link_block_info() {
+  $blocks = array();
+  $blocks['cp_footer_link'] = array(
+    'info' => t('comm-press Footer link'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * @param $delta Delta (id) of block.
+ * @return array Block array.
+ */
+function commpress_footer_link_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'cp_footer_link':
+//      $block['subject'] = t('Syndicate');
+      $block['content'] = _commpress_footer_link_content();
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Create the content of the footer link block.
+ *
+ * @return Rendered block content.
+ */
+function _commpress_footer_link_content() {
+  
+  // Only display the footer link on pages that do not contain any further slashes.
+  if (substr_count(drupal_get_path_alias($_GET['q']), '/')) {
+    return FALSE;
+  }
+  
+  $commpress_text = variable_get('commpress_footer_link_text', 'comm-press - Ihre Drupal-Agentur in Hamburg');
+
+  $commpress_image_path = drupal_get_path('module', 'commpress_footer_link') . '/images/commpress-logo-74x15.png';
+
+  $commpress_url = variable_get('commpress_footer_link_url', 'http://comm-press.de');
+
+  $commpress_image = theme('image', array('path' => $commpress_image_path, 'alt' => $commpress_text));
+
+  $content = '<div id="footer-link-block">';
+  $content .= l($commpress_image, $commpress_url, array('attributes' => array('id' => 'footer-link', 'title' => $commpress_text), 'html' => TRUE));
+
+  $content .= '</div>';
+
+  return $content;
+}
+
+
+/**
+ * Implementation of hook_ctools_plugin_directory().
+ */
+function commpress_footer_link_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'ctools' && $plugin == 'content_types') {
+    return 'plugins/' . $plugin;
+  }
+}

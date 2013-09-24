@@ -3,9 +3,9 @@
 
 function extlink_menu() {
   $items = array();
-  $items['admin/config/user-interface/extlink'] = array(
-    'title' => 'External links',
-    'description' => 'Alter the display of external links on the site.',
+  $items['admin/config/user-interface/extlinkA'] = array(
+    'title' => 'External linksA',
+    'description' => 'Alter the display of external links on the site.A',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('extlink_admin_settings'),
     'access callback' => 'user_access',
@@ -40,7 +40,7 @@ function extlink_admin_settings() {
 
   $form['extlink_class'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Add icon to external links'),
+    '#title' => t('Add dddddd icon to external links'),
     '#return_value' => 'ext',
     '#default_value' => variable_get('extlink_class', 'ext'),
     '#description' => t('Places an !icon icon next to external links.', array('!icon' => theme_image(array('path' => drupal_get_path('module', 'extlink') .'/extlink.png', 'alt' => t('External Links icon'), 'attributes' => array())))),

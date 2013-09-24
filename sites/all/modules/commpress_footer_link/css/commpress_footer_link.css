@@ -1,0 +1,14 @@
+#footer-link-block {
+  text-align: center;
+  padding: 10px 0;
+  line-height: 0;
+}
+
+#footer-link {
+  margin-right: 10px;
+}
+
+#footer-link-block a,
+#footer-link-block img a {
+  display: inline-block;
+}

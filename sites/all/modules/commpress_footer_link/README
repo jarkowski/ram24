@@ -1,0 +1,10 @@
+/**
+ * comm-press FOOTER link module
+ * 
+ * When activated, module provides a small comm-press logo with link
+ * and descriptive text. Link-target and text can be configured using
+ * the Drupal backend.
+ * 
+ * The modul provides a drupal block as well as a panels pane.
+ * 
+ */

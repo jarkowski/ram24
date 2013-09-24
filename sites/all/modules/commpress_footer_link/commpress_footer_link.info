@@ -1,0 +1,8 @@
+name = Comm-press footer link
+description = Provides footer link.
+package = comm-press
+core = 7.x
+configure = admin/config/user-interface/commpress_footer_link
+version = 7.x-1.0
+
+stylesheets[all][] = css/commpress_footer_link.css
